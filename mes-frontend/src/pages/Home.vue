@@ -1,7 +1,6 @@
 <template>
     <div id="home">
 
-        <!-- breadcrumb -->
             <nav class="text-sm font-semibold mb-6" aria-label="Breadcrumb">
               <ol class="list-none p-0 inline-flex">
                 <li class="flex items-center text-blue-500">
@@ -13,7 +12,6 @@
                 </li>
               </ol>
             </nav>
-            <!-- breadcrumb end -->
 
             <div class="flex flex-wrap -mx-3 mb-20">
 
@@ -101,7 +99,7 @@ export default {
         data: {
           labels: [],
           datasets: [{
-            label: 'Buyers',
+            label: 'Quantity',
             backgroundColor: 'rgba(99, 179, 237, 0.2)',
             borderColor: '#63b3ed',
             pointBackgroundColor: '#fff',
@@ -135,7 +133,7 @@ export default {
         data: {
           labels: [],
           datasets: [{
-            label: 'Reviews',
+            label: '%',
             backgroundColor: 'rgba(99, 179, 237, 0.2)',
             borderColor: '#63b3ed',
             pointBackgroundColor: '#fff',

@@ -5,11 +5,16 @@ import Router from 'vue-router'
 import Dashboard from '@/components/Dashboard'
 import DashboardHome from '@/pages/Home'
 import Production from '@/pages/Product'
-import QualityControl from '@/pages/QualityControl'
 
 import store from './store'
 
 import '@/assets/css/tailwind.css'
+import VueGoodTablePlugin from 'vue-good-table';
+
+// import the styles
+import 'vue-good-table/dist/vue-good-table.css'
+
+Vue.use(VueGoodTablePlugin);
 
 
 Vue.config.productionTip = false
@@ -22,7 +27,6 @@ const routes = [
       { path: '/', redirect: { name: 'DashboardHome' } },
       { path: 'home', name: 'DashboardHome', component: DashboardHome },
       { path: '/production', name: 'Production', component: Production },
-      { path: '/quality-control', name: 'QualityControl', component: QualityControl },
     ]
   },
   { path: '/', redirect: { name: 'DashboardHome' } },

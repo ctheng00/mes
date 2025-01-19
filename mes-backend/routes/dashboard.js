@@ -4,7 +4,7 @@ const router = express.Router();
 router.get('/production-status', (req, res) => {
   const productionData = {
       labels: ['Aug 24', 'Sept 24', 'Oct 24', 'Nov 24', 'Dec 24', 'Jan 25'],
-      data: [23,28,30,25,35,32]
+      data: [23,28,20,25,25,32]
   };
   res.json(productionData);
 });
